@@ -2,11 +2,9 @@ public class BmiService {
 
     private double imt;
 
-    public double calculate(double a, double b) {
-        double weight = a; //  в метрах
-        double height = b; //  в киллограммах
+    public double calculate(double weight, double height) {
 
-        imt = a / (b * b);
+        imt = weight / (height * height);
 
         return imt;
     }
